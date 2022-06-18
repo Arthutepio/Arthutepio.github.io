@@ -10,7 +10,6 @@ body {
 
 }
 header {
-    /* border: 1px solid red; */
     display: inline-flex ;
     width: 100%;
 }
@@ -31,9 +30,7 @@ header {
 
     
 }
-ul {
-    text-decoration: none;
-}
+
 
 
 nav {
@@ -46,6 +43,7 @@ nav {
 li {
     display: inline-block;
     padding: 0 10px;
+    text-decoration: none;
     
 }
 #image {
@@ -62,7 +60,7 @@ span {
     display: inline-flex;
     width: 100%;
     text-align: center;
-    padding: 200px 0px;
+    padding: 100px 0px;
     font-size: 2em;
 }
 #soft {
