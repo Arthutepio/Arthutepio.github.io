@@ -1,60 +1,86 @@
 body {
     background: #080713; 
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Saira', sans-serif;
     font-size: 20px;
     color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+    
    
 
 }
+header {
+    /* border: 1px solid red; */
+    display: inline-flex ;
+    width: 100%;
+}
+#name{
+    /* border: 1px solid greenyellow; */
+    width: 33%;
+    margin-left: 10px;
+    font-size: 20px;
+}
+#menu {
+    width:33%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    
+    
+
+    
+}
+ul {
+    text-decoration: none;
+}
+
 
 nav {
-    text-align: right;
     
+    /* border: 1px solid white; */
+    width: 33%;
+    text-align: right;
+    margin-top: 35px;
 }
 li {
     display: inline-block;
+    padding: 0 10px;
+    
 }
-
-
-
-
-
-
-
-
-
-/* h1 {
-    font-family: 'Kdam Thmor Pro', sans-serif;
-    color: rgba(22, 7, 241, 0.788);
-    font-size: 60px;
-    font-style: italic;
-    letter-spacing: 4px;
-    background-color: black;
-    padding: 30px ;
-    border-radius: 50px;
-    width: 900px;
+#image {
     text-align: center;
-
+    margin-top:100px ;
     
     
-   
-} */
-.classe-titulos {
-    font-size: 40px;
-    color: rgba(22, 7, 241, 0.788);
     
-
-
 }
-p {
-    font-size: 20px;
+span {
+    color: blue;
 }
-.button
- {
-    background-color: #11a36a;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 900;
- }
+.habidades {
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    padding: 200px 0px;
+    font-size: 2em;
+}
+#soft {
+    border: 10px solid blue;
+    width: 50%;
+    
+    
+}
+#hard {
+    border: 10px solid blue;
+    width: 50%;
+}
+h2 {
+    color: blue;
+    margin-top: 500px;
+    font-size: 55px;
+}
+.project {
+    margin-top:400px;
+    padding-bottom: 500px;
+}
