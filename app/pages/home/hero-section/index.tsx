@@ -1,6 +1,7 @@
 import { Button } from '@/app/components/button'
 import { Tech } from '@/app/components/tech'
 import Image from 'next/image'
+import Link from 'next/link'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
 
 const CONTACTS = [
@@ -18,6 +19,7 @@ const CONTACTS = [
   },
 ]
 
+
 export default function HeroSection() {
   return (
     <section
@@ -30,21 +32,21 @@ export default function HeroSection() {
           <h2 className="text-4xl font-medium mt-2">ARTHUTEPIO RODRIGUES</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
             Olá, podem me chamar de Arthur, sou desenvolvedor Fullstack e
-            apaixonado por tecnologia, minhas principais habilidades que me
-            dedico são HTML, CSS, JavaScript, React, Node.js, API Rest, Docker,
-            MySQL, Mongo DB, Sequelize, Mongose, Jest, Git. Além de habilidades
-            técnicas, sou capaz de trabalhar em equipe e tenho um forte
-            interesse em resolver problemas que possam ajudar as pessoas.
+            apaixonado por tecnologia. Além de habilidades técnicas, sou capaz de trabalhar em equipe e tenho um forte
+            interesse em resolver problemas que possam ajudar as pessoas. As principais tecnologias que tenho trabalhado são:
           </p>
 
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
-            {Array.from({ length: 10 }).map((_item, index) => (
-              <Tech name="Test.js" key={index} />
-            ))}
+              <Tech name="React" />
+              <Tech name="Node.js" />
+              <Tech name="TypeScript" />
+              <Tech name="Tailwind" />            
           </div>
 
           <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-            <Button className="w-max shadow-button">Entre em contato</Button>
+            <Link href="#contact">
+              <Button className="w-max shadow-button">Entre em contato</Button>
+            </Link>
 
             <div className="text-2xl text-gray-600 flex items-center h-20 gap-3">
               {CONTACTS.map((items, index) => (

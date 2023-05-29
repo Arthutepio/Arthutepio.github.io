@@ -15,8 +15,6 @@ export const HighlightedProjects = () => {
       <div>
         <ProjecCard />
         <HorizontalLine className="mb-16" />
-        <ProjecCard />
-        <HorizontalLine className="mb-16" />
       </div>
     </section>
   )

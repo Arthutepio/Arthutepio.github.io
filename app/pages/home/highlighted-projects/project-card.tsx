@@ -7,7 +7,7 @@ export const ProjecCard = () => {
     <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
       <div className="w-full h-full">
         <Image
-          src="/images/projeto.png"
+          src="/images/tfc.png"
           alt="image do projeto"
           width={420}
           height={304}
@@ -23,26 +23,25 @@ export const ProjecCard = () => {
             alt="icone"
             src="/images/icon_project.png"
           />
-          Nome do Projeto
+          Trybe Futebol Clube
         </h3>
         <p className="text-gray-400 my-6">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae
-          blanditiis recusandae amet nihil, in ducimus voluptatum accusamus,
-          eius beatae, sunt minus placeat ex veritatis fuga eligendi facere
-          natus laboriosam! Quis maxime doloremque culpa officia deleniti, quo
-          provident voluptatem autem. Ipsa!
+        O projeto Football Leaderboard tem como objetivo criar uma tabela de classificação para um campeonato de futebol. Minha responsabilidade foi desenvolver uma API, utilizando o método TDD, e integrar as aplicações por meio do docker-compose, a fim de que funcionassem consumindo um banco de dados.
+        <br />
+        Para tanto, desenvolvi um back-end dockerizado, utilizando modelagem de dados por meio do Sequelize, em que se respeitaram as regras de negócio. A API foi concebida para ser consumida por um front-end, já provido nesse projeto.
         </p>
 
         <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:max-w-[350px]">
           <Tech name="Typescript.js" />
           <Tech name="React" />
-          <Tech name="Next.js" />
-          <Tech name="Axios" />
           <Tech name="Node.js" />
-          <Tech name="Tawilwind" />
+          <Tech name="Express" />
+          <Tech name="Docker" />
+          <Tech name="MySQL" />
+          <Tech name="Sequelize" />
         </div>
 
-        <Link href="/projects">Ver projeto</Link>
+        <Link href="https://saucy-price-production.up.railway.app/">Ver projeto</Link>
       </div>
     </div>
   )
