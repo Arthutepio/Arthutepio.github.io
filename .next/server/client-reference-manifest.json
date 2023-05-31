@@ -742,6 +742,58 @@
         "async": false
       }
     },
+    "(app-client)/./app/components/tech/index.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/tech/index.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/tech/index.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "Tech": {
+        "id": "(sc_client)/./app/components/tech/index.tsx",
+        "name": "Tech",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/pages/home/hero-section/index.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/pages/home/hero-section/index.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/pages/home/hero-section/index.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/pages/home/hero-section/index.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/image.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/image.js",
@@ -934,6 +986,32 @@
       "value": {
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "value",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/components/header/index.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/header/index.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/header/index.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/components/header/index.tsx",
+        "name": "default",
         "chunks": [
           "app/layout:static/chunks/app/layout.js"
         ],
@@ -2722,6 +2800,54 @@
       ],
       "async": false
     },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/tech/index.tsx": {
+      "id": "(app-client)/./app/components/tech/index.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/tech/index.tsx#": {
+      "id": "(app-client)/./app/components/tech/index.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/tech/index.tsx#Tech": {
+      "id": "(app-client)/./app/components/tech/index.tsx",
+      "name": "Tech",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/pages/home/hero-section/index.tsx": {
+      "id": "(app-client)/./app/pages/home/hero-section/index.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/pages/home/hero-section/index.tsx#": {
+      "id": "(app-client)/./app/pages/home/hero-section/index.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/pages/home/hero-section/index.tsx#default": {
+      "id": "(app-client)/./app/pages/home/hero-section/index.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
     "/home/arthutepio/Meus Projetos/Arthutepio.github.io/node_modules/next/dist/client/image.js": {
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
@@ -3126,6 +3252,30 @@
       "chunks": [
         "static/css/app/layout.css"
       ]
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/header/index.tsx": {
+      "id": "(app-client)/./app/components/header/index.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/header/index.tsx#": {
+      "id": "(app-client)/./app/components/header/index.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/header/index.tsx#default": {
+      "id": "(app-client)/./app/components/header/index.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
     },
     "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/header/nav-items.tsx": {
       "id": "(app-client)/./app/components/header/nav-items.tsx",
