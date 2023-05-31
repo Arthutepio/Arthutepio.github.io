@@ -3,10 +3,10 @@ import Link from 'next/link'
 import NavItem from './nav-items'
 
 const NAV_ITEMS = [
-  {
-    label: 'Sobre mim',
-    href: '#about',
-  },
+  // {
+  //   label: 'Sobre mim',
+  //   href: '#about',
+  // },
   {
     label: 'Conhecimentos',
     href: '#knowledge',

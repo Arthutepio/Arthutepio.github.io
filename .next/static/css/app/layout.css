@@ -721,6 +721,9 @@ video {
 .mt-\[60px\] {
   margin-top: 60px;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
@@ -918,6 +921,10 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -929,14 +936,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 .font-medium {
   font-weight: 500;

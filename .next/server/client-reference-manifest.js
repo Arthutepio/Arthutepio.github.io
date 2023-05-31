@@ -966,6 +966,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./app/components/toaster/index.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/toaster/index.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/toaster/index.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "Toaster": {
+        "id": "(sc_client)/./app/components/toaster/index.tsx",
+        "name": "Toaster",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/pages/home/contact-form/index.tsx": {
       "*": {
         "id": "(sc_client)/./app/pages/home/contact-form/index.tsx",
@@ -3120,6 +3146,30 @@ self.__RSC_MANIFEST={
     "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/header/nav-items.tsx#default": {
       "id": "(app-client)/./app/components/header/nav-items.tsx",
       "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/toaster/index.tsx": {
+      "id": "(app-client)/./app/components/toaster/index.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/toaster/index.tsx#": {
+      "id": "(app-client)/./app/components/toaster/index.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/toaster/index.tsx#Toaster": {
+      "id": "(app-client)/./app/components/toaster/index.tsx",
+      "name": "Toaster",
       "chunks": [
         "app/layout:static/chunks/app/layout.js"
       ],
