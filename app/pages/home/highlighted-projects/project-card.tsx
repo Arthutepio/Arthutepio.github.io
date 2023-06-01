@@ -41,7 +41,7 @@ export const ProjecCard = () => {
           <Tech name="Sequelize" />
         </div>
 
-        <Link href="https://saucy-price-production.up.railway.app/">Ver projeto</Link>
+        <Link href="https://github.com/Arthutepio/project-football-leaderboard">Ver projeto</Link>
       </div>
     </div>
   )
