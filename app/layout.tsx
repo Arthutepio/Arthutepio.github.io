@@ -5,6 +5,7 @@ import Header from './components/header'
 import { Footer } from './pages/home/footer'
 import { ContactForm } from './pages/home/contact-form'
 import { Toaster } from './components/toaster'
+import { BackToTop } from './components/back-to-top'
 
 
 const inter = Inter({
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="pt-BR" className={`${inter.variable} ${plexMono.variable}`}>
       <body>
         <Toaster />
+        <BackToTop />
         <Header />
         {children}
         <ContactForm />

@@ -992,6 +992,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./app/components/back-to-top/index.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/components/back-to-top/index.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/components/back-to-top/index.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "BackToTop": {
+        "id": "(sc_client)/./app/components/back-to-top/index.tsx",
+        "name": "BackToTop",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./app/components/header/index.tsx": {
       "*": {
         "id": "(sc_client)/./app/components/header/index.tsx",
@@ -3252,6 +3278,30 @@ self.__RSC_MANIFEST={
       "chunks": [
         "static/css/app/layout.css"
       ]
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/back-to-top/index.tsx": {
+      "id": "(app-client)/./app/components/back-to-top/index.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/back-to-top/index.tsx#": {
+      "id": "(app-client)/./app/components/back-to-top/index.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/back-to-top/index.tsx#BackToTop": {
+      "id": "(app-client)/./app/components/back-to-top/index.tsx",
+      "name": "BackToTop",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
     },
     "/home/arthutepio/Meus Projetos/Arthutepio.github.io/app/components/header/index.tsx": {
       "id": "(app-client)/./app/components/header/index.tsx",
