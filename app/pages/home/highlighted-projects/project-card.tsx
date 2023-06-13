@@ -26,9 +26,9 @@ export const ProjecCard = () => {
           Trybe Futebol Clube
         </h3>
         <p className="text-gray-400 my-6">
-        O projeto Football Leaderboard tem como objetivo criar uma tabela de classificação para um campeonato de futebol. Minha responsabilidade foi desenvolver uma API, utilizando o método TDD, e integrar as aplicações por meio do docker-compose, a fim de que funcionassem consumindo um banco de dados.
-        <br />
-        Para tanto, desenvolvi um back-end dockerizado, utilizando modelagem de dados por meio do Sequelize, em que se respeitaram as regras de negócio. A API foi concebida para ser consumida por um front-end, já provido nesse projeto.
+          O projeto Football Leaderboard tem como objetivo criar uma tabela de classificação para um campeonato de futebol. Minha responsabilidade foi desenvolver uma API, utilizando o método TDD, e integrar as aplicações por meio do docker-compose, a fim de que funcionassem consumindo um banco de dados.
+          <br />
+          Para tanto, desenvolvi um back-end dockerizado, utilizando modelagem de dados por meio do Sequelize, em que se respeitaram as regras de negócio. A API foi concebida para ser consumida por um front-end, já provido nesse projeto.
         </p>
 
         <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:max-w-[350px]">
@@ -41,7 +41,7 @@ export const ProjecCard = () => {
           <Tech name="Sequelize" />
         </div>
 
-        <Link href="https://github.com/Arthutepio/project-football-leaderboard">Ver projeto</Link>
+        <Link href="https://github.com/Arthutepio/project-football-leaderboard" target='_blank'>Ver projeto</Link>
       </div>
     </div>
   )

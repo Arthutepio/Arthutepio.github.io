@@ -26,7 +26,7 @@ export default function HeroSection() {
   return (
     <section
       id="about"
-      className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110px]"
+      className="w-screen h-screen bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110px]"
     >
       <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
         <motion.div
@@ -35,8 +35,8 @@ export default function HeroSection() {
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          >
-          <p className="font-mono text-emerald-400">Olá, eu sou</p>
+        >
+          <p className="font-mono text-cyan-400">Olá, eu sou</p>
           <h2 className="text-4xl font-medium mt-2">ARTHUTEPIO RODRIGUES</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
             Olá, podem me chamar de Arthur, sou desenvolvedor Fullstack e
@@ -45,10 +45,10 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
-              <Tech name="React" />
-              <Tech name="Node.js" />
-              <Tech name="TypeScript" />
-              <Tech name="Tailwind" />            
+            <Tech name="React" />
+            <Tech name="Node.js" />
+            <Tech name="TypeScript" />
+            <Tech name="Tailwind" />
           </div>
 
           <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
@@ -56,14 +56,14 @@ export default function HeroSection() {
               <Button className="w-max shadow-button">Entre em contato</Button>
             </Link>
 
-            <div className="text-2xl text-gray-600 flex items-center h-20 gap-3">
+            <div className="text-5xl text-gray-100 flex items-center h-20 gap-3">
               {CONTACTS.map((items, index) => (
                 <a
                   href={items.url}
                   key={`contact-${index}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-gray-100 transition-colors"
+                  className="hover:text-cyan-600 transition-all disabled:opacity-50"
                 >
                   {items.icon}
                 </a>
@@ -79,14 +79,14 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
           className="origin-center"
         >
-        <Image
-          width={420}
-          height={404}
-          src="/images/arthur.png"
-          alt="image de Arthur Rodrigues"
-          className="w-[300px] h-[350px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl rounded-2xl object-cover"
+          <Image
+            width={420}
+            height={404}
+            src="/images/arthur.png"
+            alt="image de Arthur Rodrigues"
+            className="w-[300px] h-[350px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl rounded-2xl object-cover"
           />
-          </motion.div>
+        </motion.div>
       </div>
     </section>
   )

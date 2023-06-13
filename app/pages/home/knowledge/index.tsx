@@ -4,14 +4,15 @@ import { TbBrandCss3, TbBrandDocker, TbBrandGithub, TbBrandHtml5, TbBrandJavascr
 
 export const Knowledge = () => {
   return (
-    <section id="knowledge" className="container py-16">
-      <SectionTitle
-        title="Conhecimentos"
-        subtitle="competências"
-        className=""
-      />
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <section id="knowledge" className="container py-16">
+        <SectionTitle
+          title="Conhecimentos"
+          subtitle="competências"
+          className=""
+        />
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt-[60px]">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt-[60px]">
           <KnownTech
             tech={{
               icon: <TbBrandJavascript />,
@@ -84,8 +85,9 @@ export const Knowledge = () => {
               name: 'Github',
             }}
           />
-          
-      </div>
-    </section>
+
+        </div>
+      </section>
+    </div>
   )
 }

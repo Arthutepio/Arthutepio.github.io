@@ -4,18 +4,20 @@ import { ProjecCard } from './project-card'
 
 export const HighlightedProjects = () => {
   return (
-    <section className="container py-16" id="projects">
-      <SectionTitle
-        title="Projetos em destaque"
-        subtitle="destaques"
-        className=""
-      />
-      <HorizontalLine className="mb-16" />
-
-      <div>
-        <ProjecCard />
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <section className="container py-16" id="projects">
+        <SectionTitle
+          title="Projetos em destaque"
+          subtitle="destaques"
+          className=""
+        />
         <HorizontalLine className="mb-16" />
-      </div>
-    </section>
+
+        <div>
+          <ProjecCard />
+          <HorizontalLine className="mb-16" />
+        </div>
+      </section>
+    </div>
   )
 }

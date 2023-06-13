@@ -16,11 +16,11 @@ const contactFormSchema = z.object({
 type ContactFormData = z.infer<typeof contactFormSchema>
 
 export const ContactForm = () => {
-  const { 
-    handleSubmit, 
-    register, 
-    reset, 
-    formState: { isSubmitting } 
+  const {
+    handleSubmit,
+    register,
+    reset,
+    formState: { isSubmitting }
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
   })
@@ -38,7 +38,7 @@ export const ContactForm = () => {
   return (
     <section
       id="contact"
-      className="py-16 px-6 md:py-32 flex items-center justify-center bg-gray-950"
+      className="py-16 px-6 md:py-32 flex items-center justify-center bg-gray-900"
     >
       <div className="w-full max-w-[420px] mx-auto">
         <SectionTitle
