@@ -26,11 +26,11 @@ export default function HeroSection() {
   return (
     <section
       id="about"
-      className="w-screen h-screen bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[110px]"
+      className="w-full lg:h-[1024px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[310px]"
     >
       <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
         <motion.div
-          className="w-full lg:max-w-[530px]"
+          className="w-full lg:max-w-[530px]  text-justify"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
@@ -81,10 +81,10 @@ export default function HeroSection() {
         >
           <Image
             width={420}
-            height={404}
-            src="/images/arthur.png"
+            height={420}
+            src="/images/arthur003.jpeg"
             alt="image de Arthur Rodrigues"
-            className="w-[300px] h-[350px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl rounded-2xl object-cover"
+            className="w-[350px] h-[350px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl rounded-full object-cover"
           />
         </motion.div>
       </div>
