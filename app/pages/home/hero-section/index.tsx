@@ -30,7 +30,7 @@ export default function HeroSection() {
     >
       <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
         <motion.div
-          className="w-full lg:max-w-[530px]  text-justify"
+          className="w-full lg:max-w-[530px] text-justify"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
@@ -82,9 +82,9 @@ export default function HeroSection() {
           <Image
             width={420}
             height={420}
-            src="/images/arthur003.jpeg"
+            src="/images/arthur-sf-04.png"
             alt="image de Arthur Rodrigues"
-            className="w-[350px] h-[350px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl rounded-full object-cover"
+            className="w-[400px] h-[450px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl object-cover"
           />
         </motion.div>
       </div>
