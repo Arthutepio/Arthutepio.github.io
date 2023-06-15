@@ -30,7 +30,7 @@ export default function HeroSection() {
     >
       <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
         <motion.div
-          className="w-full lg:max-w-[530px]  text-justify"
+          className="w-full lg:max-w-[530px] text-justify"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
