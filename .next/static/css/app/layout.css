@@ -685,9 +685,6 @@ video {
 .absolute {
   position: absolute;
 }
-.inset-0 {
-  inset: 0px;
-}
 .bottom-14 {
   bottom: 3.5rem;
 }
@@ -760,29 +757,17 @@ video {
 .h-\[200px\] {
   height: 200px;
 }
-.h-\[350px\] {
-  height: 350px;
+.h-\[430px\] {
+  height: 430px;
 }
 .h-full {
   height: 100%;
 }
-.h-\[450px\] {
-  height: 450px;
+.h-\[400px\] {
+  height: 400px;
 }
-.h-\[650px\] {
-  height: 650px;
-}
-.h-\[550px\] {
-  height: 550px;
-}
-.h-\[500px\] {
-  height: 500px;
-}
-.h-\[430px\] {
-  height: 430px;
-}
-.w-\[350px\] {
-  width: 350px;
+.w-\[450px\] {
+  width: 450px;
 }
 .w-full {
   width: 100%;
@@ -791,8 +776,14 @@ video {
   width: -moz-max-content;
   width: max-content;
 }
-.w-\[450px\] {
-  width: 450px;
+.w-\[350px\] {
+  width: 350px;
+}
+.w-\[4000px\] {
+  width: 4000px;
+}
+.w-\[400px\] {
+  width: 400px;
 }
 .max-w-\[420px\] {
   max-width: 420px;
@@ -855,9 +846,6 @@ video {
 .gap-y-3 {
   row-gap: 0.75rem;
 }
-.rounded-full {
-  border-radius: 9999px;
-}
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -892,26 +880,6 @@ video {
 }
 .bg-hero-image {
   background-image: url('/images/hero-bg.png');
-}
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-.from-transparent {
-  --tw-gradient-from: transparent var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-from-position);
-  --tw-gradient-to-position:  ;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.via-transparent {
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
-  --tw-gradient-stops: var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-.to-black {
-  --tw-gradient-to: #000 var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
 }
 .bg-cover {
   background-size: cover;
@@ -1033,15 +1001,6 @@ video {
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-.opacity-50 {
-  opacity: 0.5;
-}
-.opacity-80 {
-  opacity: 0.8;
-}
-.opacity-10 {
-  opacity: 0.1;
 }
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);

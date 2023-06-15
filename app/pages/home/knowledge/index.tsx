@@ -4,7 +4,7 @@ import { TbBrandCss3, TbBrandDocker, TbBrandGithub, TbBrandHtml5, TbBrandJavascr
 
 export const Knowledge = () => {
   return (
-    <section id="knowledge" className="container py-16 w-full lg:h-[1024px]">
+    <section id="knowledge" className="container py-16">
       <SectionTitle
         title="Conhecimentos"
         subtitle="competências"

@@ -84,7 +84,7 @@ export default function HeroSection() {
             height={420}
             src="/images/arthur-sf-04.png"
             alt="image de Arthur Rodrigues"
-            className="w-[450px] h-[430px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl object-cover"
+            className="w-[400px] h-[430px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl object-cover"
           />
         </motion.div>
       </div>
