@@ -24,6 +24,12 @@ const NAV_ITEMS = [
 ]
 
 export default function Header() {
+  const handleContact = () => {
+    const contactSection = document.querySelector('#contact')
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
     <motion.header
       className="absolute top-0 z-10 h-24 w-full flex items-center justify-center"
@@ -47,6 +53,6 @@ export default function Header() {
           ))}
         </nav>
       </div>
-      </motion.header>
+    </motion.header>
   )
 }

@@ -24,6 +24,13 @@ const CONTACTS = [
 
 
 export default function HeroSection() {
+  const handleContact = () => {
+    const contactSection = document.querySelector('#contact')
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <section
       id="about"
@@ -53,12 +60,10 @@ export default function HeroSection() {
           </div> */}
 
           <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-            <Link href="#contact">
-              <Button className="w-max shadow-button">
-                Entre em contato
-                <HiArrowNarrowRight size={18} />
-              </Button>
-            </Link>
+            <Button className="w-max shadow-button" onClick={handleContact}>
+              Entre em contato
+              <HiArrowNarrowRight size={18} />
+            </Button>
 
             <div className="text-5xl text-gray-100 flex items-center h-20 gap-3">
               {CONTACTS.map((items, index) => (

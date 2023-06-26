@@ -13,9 +13,15 @@ export default function NavItem({ label, href }: NavItemProps) {
 
   const isActive = pathname === href
 
+  const handleContact = () => {
+    const contactSection = document.querySelector('#contact')
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   return (
-    <Link
-      href={href}
+    <a
+      onClick={handleContact}
       className={cn(
         'text-gray-400 flex items-center gap-2 font-medium font-mono',
         isActive && 'text-gray-50',
@@ -23,6 +29,6 @@ export default function NavItem({ label, href }: NavItemProps) {
     >
       <span className="text-cyan-400">#</span>
       <span className="">{label}</span>
-    </Link>
+    </a>
   )
 }
