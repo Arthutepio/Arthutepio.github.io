@@ -14,7 +14,7 @@ export default function NavItem({ label, href }: NavItemProps) {
   const isActive = pathname === href
 
   const handleContact = () => {
-    const contactSection = document.querySelector('#contact')
+    const contactSection = document.querySelector(href)
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' })
     }
