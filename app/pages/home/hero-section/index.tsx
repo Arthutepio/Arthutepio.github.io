@@ -1,8 +1,9 @@
 "use client"
 import { Button } from '@/app/components/button'
-import { Tech } from '@/app/components/tech'
+// import { Tech } from '@/app/components/tech'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { HiArrowNarrowRight } from 'react-icons/hi'
 import Link from 'next/link'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
 
@@ -39,21 +40,24 @@ export default function HeroSection() {
           <p className="font-mono text-cyan-400">Olá, eu sou</p>
           <h2 className="text-4xl font-medium mt-2">ARTHUTEPIO RODRIGUES</h2>
           <p className="text-gray-400 my-6 text-sm sm:text-base">
-            Olá, podem me chamar de Arthur, sou desenvolvedor Fullstack e
+            Podem me chamar de Arthur, sou desenvolvedor Fullstack e
             apaixonado por tecnologia. Além de habilidades técnicas, sou capaz de trabalhar em equipe e tenho um forte
-            interesse em resolver problemas que possam ajudar as pessoas. As principais tecnologias que tenho trabalhado são:
+            interesse em resolver problemas que possam ajudar as pessoas.
           </p>
 
-          <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
+          {/* <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
             <Tech name="React" />
             <Tech name="Node.js" />
             <Tech name="TypeScript" />
             <Tech name="Tailwind" />
-          </div>
+          </div> */}
 
           <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
             <Link href="#contact">
-              <Button className="w-max shadow-button">Entre em contato</Button>
+              <Button className="w-max shadow-button">
+                Entre em contato
+                <HiArrowNarrowRight size={18} />
+              </Button>
             </Link>
 
             <div className="text-5xl text-gray-100 flex items-center h-20 gap-3">
