@@ -1,6 +1,7 @@
 import { Link } from '@/app/components/link'
 import { Tech } from '@/app/components/tech'
 import Image from 'next/image'
+import { HiArrowNarrowRight } from 'react-icons/hi'
 
 export const ProjecCard = () => {
   return (
@@ -23,7 +24,7 @@ export const ProjecCard = () => {
             alt="icone"
             src="/images/icon_project.png"
           />
-          Trybe Futebol Clube
+          Footbol Leaderboard
         </h3>
         <p className="text-gray-400 my-6">
           O projeto Football Leaderboard tem como objetivo criar uma tabela de classificação para um campeonato de futebol. Minha responsabilidade foi desenvolver uma API, utilizando o método TDD, e integrar as aplicações por meio do docker-compose, a fim de que funcionassem consumindo um banco de dados.
@@ -41,7 +42,10 @@ export const ProjecCard = () => {
           <Tech name="Sequelize" />
         </div>
 
-        <Link href="https://github.com/Arthutepio/project-football-leaderboard" target='_blank'>Ver projeto</Link>
+        <Link href="/projects/book-wise" target='_blank'>
+          Ver projeto
+          <HiArrowNarrowRight />
+        </Link>
       </div>
     </div>
   )
