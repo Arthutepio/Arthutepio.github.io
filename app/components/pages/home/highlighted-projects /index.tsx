@@ -3,8 +3,13 @@ import { SectionTitle } from '@/app/components/section-title'
 import { ProjecCard } from './project-card'
 import { Link } from '@/app/components/link'
 import { HiArrowNarrowRight } from 'react-icons/hi'
+import { Project } from '@/app/types/projects'
 
-export const HighlightedProjects = () => {
+type HighlightedProjectsProps = {
+  projects: Project[]
+}
+
+export const HighlightedProjects = ({ projects }: HighlightedProjectsProps) => {
   return (
     <section className="container py-16 w-full lg:h-[1024px]" id="projects">
       <SectionTitle
@@ -15,8 +20,12 @@ export const HighlightedProjects = () => {
       <HorizontalLine className="mb-16" />
 
       <div>
-        <ProjecCard />
-        <HorizontalLine className="mb-16" />
+        {projects?.map(project => (
+          <div key={project.slug}>
+            <ProjecCard project={project} />
+            <HorizontalLine className="mb-16" />
+          </div>
+        ))}
       </div>
 
       <p className="flex items-center gap-1.5">

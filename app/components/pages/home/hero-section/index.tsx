@@ -6,6 +6,9 @@ import Image from 'next/image'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import Link from 'next/link'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
+import { HomePageInfo } from '@/app/types/page-info'
+import { RichText } from '@/app/components/rich-text'
+import { CMSIcon } from '@/app/components/cms-icon'
 
 const CONTACTS = [
   {
@@ -22,8 +25,11 @@ const CONTACTS = [
   },
 ]
 
+type HomeSectionProps = {
+  homeInfo: HomePageInfo
+}
 
-export default function HeroSection() {
+export default function HeroSection({ homeInfo }: HomeSectionProps) {
   const handleContact = () => {
     const contactSection = document.querySelector('#contact')
     if (contactSection) {
@@ -31,6 +37,7 @@ export default function HeroSection() {
     }
   }
 
+  console.log("xxxxxxxxxxxxxxxxxxxxxx", homeInfo.socials);
   return (
     <section
       id="about"
@@ -45,12 +52,12 @@ export default function HeroSection() {
           transition={{ duration: 0.5 }}
         >
           <p className="font-mono text-cyan-400">Olá, eu sou</p>
+
           <h2 className="text-4xl font-medium mt-2">ARTHUTEPIO RODRIGUES</h2>
-          <p className="text-gray-400 my-6 text-sm sm:text-base">
-            Podem me chamar de Arthur, sou desenvolvedor Fullstack e
-            apaixonado por tecnologia. Além de habilidades técnicas, sou capaz de trabalhar em equipe e tenho um forte
-            interesse em resolver problemas que possam ajudar as pessoas.
-          </p>
+
+          <div className="text-gray-400 my-6 text-sm sm:text-base">
+            <RichText content={homeInfo.introduction.raw} />
+          </div>
 
           {/* <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
             <Tech name="React" />
@@ -66,15 +73,17 @@ export default function HeroSection() {
             </Button>
 
             <div className="text-5xl text-gray-100 flex items-center h-20 gap-3">
-              {CONTACTS.map((items, index) => (
+              {homeInfo.socials.map((item, index) => (
                 <a
-                  href={items.url}
+                  href={item.url}
                   key={`contact-${index}`}
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-cyan-600 transition-all disabled:opacity-50"
                 >
-                  {items.icon}
+                  <CMSIcon icon={item.iconSvg} />
+
+
                 </a>
               ))}
             </div>
@@ -91,7 +100,7 @@ export default function HeroSection() {
           <Image
             width={420}
             height={420}
-            src="/images/arthur-sf-04.png"
+            src={homeInfo.profilePicture.url}
             alt="image de Arthur Rodrigues"
             className="w-[400px] h-[430px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl object-cover"
           />
