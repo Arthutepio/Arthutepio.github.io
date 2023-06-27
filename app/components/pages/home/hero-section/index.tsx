@@ -1,6 +1,5 @@
 "use client"
 import { Button } from '@/app/components/button'
-// import { Tech } from '@/app/components/tech'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { HiArrowNarrowRight } from 'react-icons/hi'
@@ -37,7 +36,6 @@ export default function HeroSection({ homeInfo }: HomeSectionProps) {
     }
   }
 
-  console.log("xxxxxxxxxxxxxxxxxxxxxx", homeInfo.socials);
   return (
     <section
       id="about"
@@ -59,13 +57,6 @@ export default function HeroSection({ homeInfo }: HomeSectionProps) {
             <RichText content={homeInfo.introduction.raw} />
           </div>
 
-          {/* <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
-            <Tech name="React" />
-            <Tech name="Node.js" />
-            <Tech name="TypeScript" />
-            <Tech name="Tailwind" />
-          </div> */}
-
           <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
             <Button className="w-max shadow-button" onClick={handleContact}>
               Entre em contato
@@ -73,17 +64,15 @@ export default function HeroSection({ homeInfo }: HomeSectionProps) {
             </Button>
 
             <div className="text-5xl text-gray-100 flex items-center h-20 gap-3">
-              {homeInfo.socials.map((item, index) => (
+              {homeInfo.socials.map((contact, index) => (
                 <a
-                  href={item.url}
+                  href={contact.url}
                   key={`contact-${index}`}
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-cyan-600 transition-all disabled:opacity-50"
                 >
-                  <CMSIcon icon={item.iconSvg} />
-
-
+                  <CMSIcon icon={contact.iconSvg} />
                 </a>
               ))}
             </div>
