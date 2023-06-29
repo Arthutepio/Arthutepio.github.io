@@ -23,8 +23,8 @@ const getPageData = async (): Promise<HomePageData> => {
           url
         }
         socials {
-          url
           iconSvg
+          url
         }
         knownTechs {
           iconSvg
@@ -65,12 +65,13 @@ const getPageData = async (): Promise<HomePageData> => {
 
   return fetchHygraphQuery(
     query,
-    60 * 60 * 24
+    1000 * 60 * 60 * 24
   )
 }
 
 export default async function Home() {
   const { page: pageData, workExperiences } = await getPageData()
+  console.log(pageData.socials);
 
   return (
     <>
