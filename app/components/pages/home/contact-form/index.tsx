@@ -1,4 +1,5 @@
 'use client'
+
 import { Button } from '@/app/components/button'
 import { SectionTitle } from '@/app/components/section-title'
 import { useForm } from 'react-hook-form'
@@ -6,6 +7,7 @@ import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import axios from 'axios'
 import { toast } from 'react-hot-toast'
+import { motion } from 'framer-motion'
 
 const contactFormSchema = z.object({
   name: z.string().min(3).max(100),
@@ -14,6 +16,12 @@ const contactFormSchema = z.object({
 })
 
 type ContactFormData = z.infer<typeof contactFormSchema>
+
+const animProps = {
+  initial: { opacity: 0, y: 50 },
+  whileInView: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 50 }
+}
 
 export const ContactForm = () => {
   const {
@@ -46,9 +54,10 @@ export const ContactForm = () => {
           subtitle="contato"
           className="items-center text-center"
         />
-        <form
+        <motion.form
           className="mt-12 w-full flex flex-col gap-4"
           onSubmit={handleSubmit(onSubmit)}
+          {...animProps}
         >
           <input
             placeholder="Nome"
@@ -73,7 +82,7 @@ export const ContactForm = () => {
           <Button className="w-max mx-auto mt-6 shadow-button" disabled={isSubmitting}>
             Envia mensagem
           </Button>
-        </form>
+        </motion.form>
       </div>
     </section>
   )

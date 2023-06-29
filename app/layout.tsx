@@ -7,6 +7,17 @@ import { ContactForm } from './components/pages/home/contact-form'
 import { Toaster } from './components/toaster'
 import { BackToTop } from './components/back-to-top'
 
+export const metadata = {
+  title: {
+    default: 'Home',
+    template: '%s | Arthutepio',
+  },
+  icons: [
+    {
+      url: '/favicon.svg',
+    },
+  ],
+}
 
 const inter = Inter({
   variable: '--font-inter',
