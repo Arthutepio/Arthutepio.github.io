@@ -5,10 +5,6 @@ import NavItem from './nav-items'
 import { motion } from 'framer-motion'
 
 const NAV_ITEMS = [
-  // {
-  //   label: 'Sobre mim',
-  //   href: '#about',
-  // },
   {
     label: 'Conhecimentos',
     href: '#knowledge',
@@ -16,6 +12,10 @@ const NAV_ITEMS = [
   {
     label: 'Projetos',
     href: '#projects',
+  },
+  {
+    label: 'Experiências',
+    href: '#about',
   },
   {
     label: 'Contato',
@@ -32,7 +32,7 @@ export default function Header() {
   }
   return (
     <motion.header
-      className="absolute top-0 z-10 h-24 w-full flex items-center justify-center"
+      className="fixed bg-gray-900 top-0 z-10 h-24 w-full flex items-center justify-center shadow"
       initial={{ top: -100 }}
       animate={{ top: 0 }}
       transition={{ duration: 0.5 }}

@@ -2,7 +2,7 @@
 
 import { SectionTitle } from '@/app/components/section-title'
 import { KnownTech } from './know-tech'
-import { TbBrandCss3, TbBrandDocker, TbBrandGithub, TbBrandHtml5, TbBrandJavascript, TbBrandMysql, TbBrandNextjs, TbBrandPython, TbBrandReact, TbBrandTailwind, TbBrandTypescript, TbSql } from 'react-icons/tb'
+// import { TbBrandCss3, TbBrandDocker, TbBrandGithub, TbBrandHtml5, TbBrandJavascript, TbBrandMysql, TbBrandNextjs, TbBrandPython, TbBrandReact, TbBrandTailwind, TbBrandTypescript, TbSql } from 'react-icons/tb'
 import { KnownTech as TKnownTech } from '@/app/types/projects'
 import { motion } from 'framer-motion'
 
@@ -12,7 +12,7 @@ type KnownTechsProps = {
 
 export const Knowledge = ({ techs }: KnownTechsProps) => {
   return (
-    <section id="knowledge" className="container py-16 w-full lg:h-[1024px]">
+    <section id="knowledge" className="container py-32 w-full lg:h-[1024px]">
       <SectionTitle
         title="Conhecimentos"
         subtitle="competências"
