@@ -77,7 +77,7 @@ export const ProjecCard = ({ project }: ProjecCardProps) => {
           ))}
         </div>
 
-        <Link href={`/projects/${project.slug}`} target='_blank'>
+        <Link href={`/projects/${project.slug}`} target='_self'>
           Ver projeto
           <HiArrowNarrowRight />
         </Link>

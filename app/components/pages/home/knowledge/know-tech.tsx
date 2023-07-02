@@ -14,8 +14,7 @@ export const KnownTech = ({ tech }: KnownTechProps) => {
           <CMSIcon icon={tech.iconSvg} />
         </div>
       </div>
-
-      <span></span>
     </div>
   )
 }
+

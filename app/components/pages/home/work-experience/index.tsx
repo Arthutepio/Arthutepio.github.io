@@ -8,7 +8,9 @@ type WorkExperinceProps = {
 
 export const WorkExperince = ({ experience }: WorkExperinceProps) => {
     return (
-        <section className="container py-16 w-full lg:h-[1024px] flex gap-10 md:gap-4 lg:gap-16 flex-col md:flex-row">
+        <section 
+            id="experience"
+            className="container py-24 w-full lg:h-[1024px] flex gap-10 md:gap-4 lg:gap-16 flex-col md:flex-row">
             <div className="max-w-[420px]">
                 <SectionTitle
                     subtitle="experiências"
