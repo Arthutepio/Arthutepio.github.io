@@ -15,7 +15,7 @@ const NAV_ITEMS = [
   },
   {
     label: 'Experiências',
-    href: '#about',
+    href: '#experience',
   },
   {
     label: 'Contato',

@@ -23,12 +23,12 @@ export default function NavItem({ label, href }: NavItemProps) {
     <a
       onClick={handleContact}
       className={cn(
-        'text-gray-400 flex items-center gap-2 font-medium font-mono',
+        ' text-gray-400 flex items-center gap-2 font-medium font-mono',
         isActive && 'text-gray-50',
       )}
     >
       <span className="text-cyan-400">#</span>
-      <span className="">{label}</span>
+      <span className="text-[10px] sm:text-sm">{label}</span>
     </a>
   )
 }
