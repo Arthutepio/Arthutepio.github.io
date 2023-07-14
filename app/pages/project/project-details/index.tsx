@@ -2,9 +2,9 @@
 
 import { TbBrandGithub } from "react-icons/tb"
 import { FiGlobe } from 'react-icons/fi'
-import { Button } from "../../../button"
-import { SectionTitle } from "../../../section-title"
-import { Tech } from "../../../tech"
+import { Button } from "../../../components/button"
+import { SectionTitle } from "../../../components/section-title"
+import { Tech } from "../../../components/tech"
 import { Link } from "@/app/components/link"
 import { HiArrowNarrowLeft } from "react-icons/hi"
 import { Project } from "@/app/types/projects"

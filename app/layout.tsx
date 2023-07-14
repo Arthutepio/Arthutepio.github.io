@@ -3,7 +3,7 @@ import './globals.css'
 import { ReactNode } from 'react'
 import Header from './components/header'
 import { Footer } from './components/footer'
-import { ContactForm } from './components/pages/home/contact-form'
+import { ContactForm } from './pages/home/contact-form'
 import { Toaster } from './components/toaster'
 import { BackToTop } from './components/back-to-top'
 
