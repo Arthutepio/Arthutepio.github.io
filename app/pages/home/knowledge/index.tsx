@@ -19,7 +19,7 @@ export const Knowledge = ({ techs }: KnownTechsProps) => {
         className=""
       />
 
-      <div className="grid lg:grid-cols-4 grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-3 mt-[60px]">
+      <div className="grid lg:grid-cols-4 grid-cols-[repeat(auto-fit,minmax(157px,1fr))] gap-3 mt-[60px]">
         {techs?.map((tech, i) => (
           <motion.div
             key={tech.name}
