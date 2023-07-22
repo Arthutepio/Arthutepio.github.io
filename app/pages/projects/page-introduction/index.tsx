@@ -4,6 +4,7 @@ import { Link } from "@/app/components/link"
 import { SectionTitle } from "@/app/components/section-title"
 import { HiArrowNarrowLeft } from "react-icons/hi"
 import { motion } from "framer-motion"
+import { Button } from "@/app/components/button"
 
 export const PageIntroduction = () => {
     return (
@@ -25,8 +26,10 @@ export const PageIntroduction = () => {
                 </p>
 
                 <Link href="/">
-                    <HiArrowNarrowLeft size={20} />
-                    Voltar para Home
+                    <Button>
+                        <HiArrowNarrowLeft size={20} />
+                        Voltar para Home
+                    </Button>
                 </Link>
             </motion.div>
 
