@@ -91,7 +91,7 @@ export default function HeroSection({ homeInfo }: HomeSectionProps) {
             height={420}
             src={homeInfo.profilePicture.url}
             alt="image de Arthur Rodrigues"
-            className="w-[400px] h-[430px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl object-cover"
+            className="w-[400px] h-[400px] lg:h-[400] mb-6 lg:mb-0 shadow-2xl object-cover rounded-full scale-x-[-1]"
           />
         </motion.div>
       </div>
