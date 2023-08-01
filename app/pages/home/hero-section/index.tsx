@@ -9,21 +9,6 @@ import { HomePageInfo } from '@/app/types/page-info'
 import { RichText } from '@/app/components/rich-text'
 import { CMSIcon } from '@/app/components/cms-icon'
 
-const CONTACTS = [
-  {
-    url: 'https://github.com/Arthutepio',
-    icon: <TbBrandGithub />,
-  },
-  {
-    url: 'https://www.linkedin.com/in/arthutepio/',
-    icon: <TbBrandLinkedin />,
-  },
-  {
-    url: 'https://wa.me/5531993041348',
-    icon: <TbBrandWhatsapp />,
-  },
-]
-
 type HomeSectionProps = {
   homeInfo: HomePageInfo
 }
