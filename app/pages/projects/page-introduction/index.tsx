@@ -8,7 +8,7 @@ import { Button } from "@/app/components/button"
 
 export const PageIntroduction = () => {
     return (
-        <section className="w-full h-[450px] lg:h-[1024px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-2">
+        <section className="w-full h-[450px] flex flex-col items-center justify-start py-40">
             <SectionTitle
                 title="../Meus Projetos"
                 subtitle="projetos"
